@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prenotazione intervento</title>
+    <style>
+        body {
+            background-color: #e6f2ff; 
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+
+        h2 {
+            color: #333;
+        }
+
+        form {
+            margin: 0 auto;
+            width: 300px;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            background-color: #f9f9f9;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        input[type="text"],
+        input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+
+        input[type="submit"] {
+            background-color: #007bff;
+            border: none;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+
+        button {
+            background-color: #007bff;
+            border: none;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            margin-top: 20px; /* Aggiunto margine superiore */
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+    <script>
+        function mostraMessaggio() {
+            alert("Intervento prenotato con successo");
+        }
+    </script>
+</head>
+<body>
+    <h2>Inserisci le informazioni richieste</h2>
+    <form method="post" onsubmit="mostraMessaggio()">
+        <label for="nome">Nome:</label><br>
+        <input type="text" id="nome" name="nome" required><br><br>
+        <label for="cognome">Cognome:</label><br>
+        <input type="text" id="cognome" name="cognome" required><br><br>
+        <label for="telefono">Numero di telefono:</label><br>
+        <input type="text" id="telefono" name="telefono" required><br><br>
+        <label for="targa">Targa dell'auto:</label><br>
+        <input type="text" id="targa" name="targa" required><br><br>
+        <label for="marca">Marca:</label><br>
+        <input type="text" id="marca" name="marca" required><br><br>
+        <label for="modello">Modello:</label><br>
+        <input type="text" id="modello" name="modello" required><br><br>
+        <label for="operazione">Operazione richiesta:</label><br>
+        <input type="text" id="operazione" name="operazione" required><br><br>
+        <label for="idofficina">ID_officina:</label><br>
+        <input type="text" id="idofficina" name="idofficina" required><br><br>
+        <input type="submit" value="Prenota intervento">
+    </form>
+    <button onclick="window.location.href = 'DelRegnoHomePage.html';">Ritorna alla homepage</button>
+</body>
+</html>
